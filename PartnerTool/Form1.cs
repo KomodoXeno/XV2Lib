@@ -877,7 +877,6 @@ namespace PartnerTool
         private void button6_Click(object sender, EventArgs e)
         {
             //add skill
-            if (cbSkill.SelectedIndex >= 0)
             {
                 OCS_Skill n = new OCS_Skill();
                 n.unk1 = currentPartner.id;
