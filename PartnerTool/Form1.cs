@@ -1077,5 +1077,15 @@ namespace PartnerTool
                 txtSS5.Text = "";
             }
         }
+
+        private void partnersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://animegamemods.net/thread/2897");
+        }
+
+        private void skillsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://animegamemods.net/thread/731");
+        }
     }
 }

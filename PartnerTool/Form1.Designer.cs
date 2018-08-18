@@ -142,6 +142,10 @@
             this.label41 = new System.Windows.Forms.Label();
             this.txtSS1 = new System.Windows.Forms.TextBox();
             this.label42 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.iDListsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.partnersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.skillsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -158,11 +162,12 @@
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
-            this.editToolStripMenuItem});
+            this.editToolStripMenuItem,
+            this.iDListsToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(588, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(582, 28);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -235,10 +240,10 @@
             // statusStrip1
             // 
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.statusStrip1.Location = new System.Drawing.Point(0, 363);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 361);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 19, 0);
-            this.statusStrip1.Size = new System.Drawing.Size(588, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(582, 22);
             this.statusStrip1.TabIndex = 2;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -253,7 +258,7 @@
             this.toolStripLabel2});
             this.toolStrip1.Location = new System.Drawing.Point(0, 28);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(588, 28);
+            this.toolStrip1.Size = new System.Drawing.Size(582, 28);
             this.toolStrip1.TabIndex = 3;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -285,8 +290,8 @@
             // 
             this.toolStripLabel2.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.toolStripLabel2.Name = "toolStripLabel2";
-            this.toolStripLabel2.Size = new System.Drawing.Size(24, 25);
-            this.toolStripLabel2.Text = "ID";
+            this.toolStripLabel2.Size = new System.Drawing.Size(45, 25);
+            this.toolStripLabel2.Text = "Index";
             // 
             // tabControl1
             // 
@@ -355,9 +360,9 @@
             this.label13.Location = new System.Drawing.Point(20, 199);
             this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(45, 17);
+            this.label13.Size = new System.Drawing.Size(84, 17);
             this.label13.TabIndex = 24;
-            this.label13.Text = "Order";
+            this.label13.Text = "Menu Order";
             // 
             // txtChar8
             // 
@@ -374,9 +379,9 @@
             this.label10.Location = new System.Drawing.Point(444, 80);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(39, 17);
+            this.label10.Size = new System.Drawing.Size(58, 17);
             this.label10.TabIndex = 22;
-            this.label10.Text = "unk8";
+            this.label10.Text = "Super 4";
             // 
             // txtChar11
             // 
@@ -393,9 +398,9 @@
             this.label11.Location = new System.Drawing.Point(303, 142);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(47, 17);
+            this.label11.Size = new System.Drawing.Size(57, 17);
             this.label11.TabIndex = 20;
-            this.label11.Text = "unk11";
+            this.label11.Text = "Evasive";
             // 
             // txtChar12
             // 
@@ -412,9 +417,9 @@
             this.label12.Location = new System.Drawing.Point(444, 142);
             this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(47, 17);
+            this.label12.Size = new System.Drawing.Size(57, 17);
             this.label12.TabIndex = 18;
-            this.label12.Text = "unk12";
+            this.label12.Text = "Awaken";
             // 
             // txtChar7
             // 
@@ -431,9 +436,9 @@
             this.label7.Location = new System.Drawing.Point(303, 80);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(39, 17);
+            this.label7.Size = new System.Drawing.Size(58, 17);
             this.label7.TabIndex = 16;
-            this.label7.Text = "unk7";
+            this.label7.Text = "Super 3";
             // 
             // txtChar10
             // 
@@ -450,9 +455,9 @@
             this.label8.Location = new System.Drawing.Point(161, 142);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(47, 17);
+            this.label8.Size = new System.Drawing.Size(71, 17);
             this.label8.TabIndex = 14;
-            this.label8.Text = "unk10";
+            this.label8.Text = "Ultimate 2";
             // 
             // txtChar9
             // 
@@ -469,9 +474,9 @@
             this.label9.Location = new System.Drawing.Point(20, 142);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(39, 17);
+            this.label9.Size = new System.Drawing.Size(71, 17);
             this.label9.TabIndex = 12;
-            this.label9.Text = "unk9";
+            this.label9.Text = "Ultimate 1";
             // 
             // txtChar4
             // 
@@ -488,9 +493,9 @@
             this.label4.Location = new System.Drawing.Point(444, 20);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(39, 17);
+            this.label4.Size = new System.Drawing.Size(53, 17);
             this.label4.TabIndex = 10;
-            this.label4.Text = "unk4";
+            this.label4.Text = "Soul ID";
             // 
             // txtChar6
             // 
@@ -507,9 +512,9 @@
             this.label5.Location = new System.Drawing.Point(161, 80);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(39, 17);
+            this.label5.Size = new System.Drawing.Size(58, 17);
             this.label5.TabIndex = 8;
-            this.label5.Text = "unk6";
+            this.label5.Text = "Super 2";
             // 
             // txtChar5
             // 
@@ -526,9 +531,9 @@
             this.label6.Location = new System.Drawing.Point(20, 80);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(39, 17);
+            this.label6.Size = new System.Drawing.Size(58, 17);
             this.label6.TabIndex = 6;
-            this.label6.Text = "unk5";
+            this.label6.Text = "Super 1";
             // 
             // txtChar3
             // 
@@ -545,9 +550,9 @@
             this.label3.Location = new System.Drawing.Point(303, 20);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(39, 17);
+            this.label3.Size = new System.Drawing.Size(91, 17);
             this.label3.TabIndex = 4;
-            this.label3.Text = "unk3";
+            this.label3.Text = "Parameter ID";
             // 
             // txtChar2
             // 
@@ -564,9 +569,9 @@
             this.label2.Location = new System.Drawing.Point(161, 20);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(39, 17);
+            this.label2.Size = new System.Drawing.Size(98, 17);
             this.label2.TabIndex = 2;
-            this.label2.Text = "unk2";
+            this.label2.Text = "Colour Partset";
             // 
             // txtChar1
             // 
@@ -583,13 +588,14 @@
             this.label1.Location = new System.Drawing.Point(20, 20);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(39, 17);
+            this.label1.Size = new System.Drawing.Size(98, 17);
             this.label1.TabIndex = 0;
-            this.label1.Text = "unk1";
+            this.label1.Text = "Default Parset";
             // 
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.Transparent;
+            this.tabPage2.Controls.Add(this.label14);
             this.tabPage2.Controls.Add(this.cbPartColors);
             this.tabPage2.Controls.Add(this.txtPrtColor4);
             this.tabPage2.Controls.Add(this.label24);
@@ -653,9 +659,9 @@
             this.label26.Location = new System.Drawing.Point(19, 123);
             this.label26.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(39, 17);
+            this.label26.Size = new System.Drawing.Size(51, 17);
             this.label26.TabIndex = 30;
-            this.label26.Text = "unk5";
+            this.label26.Text = "Part ID";
             // 
             // txtPrtColor3
             // 
@@ -691,9 +697,9 @@
             this.label28.Location = new System.Drawing.Point(160, 63);
             this.label28.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(39, 17);
+            this.label28.Size = new System.Drawing.Size(71, 17);
             this.label28.TabIndex = 26;
-            this.label28.Text = "unk2";
+            this.label28.Text = "Part Index";
             // 
             // txtPrtColor1
             // 
@@ -782,9 +788,9 @@
             this.label23.Location = new System.Drawing.Point(19, 81);
             this.label23.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(39, 17);
+            this.label23.Size = new System.Drawing.Size(108, 17);
             this.label23.TabIndex = 44;
-            this.label23.Text = "unk5";
+            this.label23.Text = "Costume Parset";
             // 
             // txtCostume3
             // 
@@ -988,9 +994,9 @@
             this.label19.Location = new System.Drawing.Point(301, 66);
             this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(55, 17);
+            this.label19.Size = new System.Drawing.Size(75, 17);
             this.label19.TabIndex = 28;
-            this.label19.Text = "Lock ID";
+            this.label19.Text = "Lock Index";
             // 
             // txtSkill2
             // 
@@ -1007,9 +1013,9 @@
             this.label20.Location = new System.Drawing.Point(160, 66);
             this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(21, 17);
+            this.label20.Size = new System.Drawing.Size(70, 17);
             this.label20.TabIndex = 26;
-            this.label20.Text = "ID";
+            this.label20.Text = "Skill Index";
             // 
             // txtSkill1
             // 
@@ -1138,9 +1144,9 @@
             this.label34.Location = new System.Drawing.Point(301, 59);
             this.label34.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(55, 17);
+            this.label34.Size = new System.Drawing.Size(75, 17);
             this.label34.TabIndex = 42;
-            this.label34.Text = "Lock ID";
+            this.label34.Text = "Lock Index";
             // 
             // txtParam2
             // 
@@ -1157,9 +1163,9 @@
             this.label35.Location = new System.Drawing.Point(160, 59);
             this.label35.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(21, 17);
+            this.label35.Size = new System.Drawing.Size(111, 17);
             this.label35.TabIndex = 40;
-            this.label35.Text = "ID";
+            this.label35.Text = "Parameter Index";
             // 
             // txtParam1
             // 
@@ -1270,9 +1276,9 @@
             this.label39.Location = new System.Drawing.Point(19, 121);
             this.label39.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(78, 17);
+            this.label39.Size = new System.Drawing.Size(53, 17);
             this.label39.TabIndex = 32;
-            this.label39.Text = "Super Soul";
+            this.label39.Text = "Soul ID";
             // 
             // txtSS3
             // 
@@ -1289,9 +1295,9 @@
             this.label40.Location = new System.Drawing.Point(301, 60);
             this.label40.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(55, 17);
+            this.label40.Size = new System.Drawing.Size(75, 17);
             this.label40.TabIndex = 30;
-            this.label40.Text = "Lock ID";
+            this.label40.Text = "Lock Index";
             // 
             // txtSS2
             // 
@@ -1308,9 +1314,9 @@
             this.label41.Location = new System.Drawing.Point(160, 60);
             this.label41.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(21, 17);
+            this.label41.Size = new System.Drawing.Size(73, 17);
             this.label41.TabIndex = 28;
-            this.label41.Text = "ID";
+            this.label41.Text = "Soul Index";
             // 
             // txtSS1
             // 
@@ -1331,17 +1337,51 @@
             this.label42.TabIndex = 26;
             this.label42.Text = "Partner ID";
             // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(467, 169);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(104, 85);
+            this.label14.TabIndex = 42;
+            this.label14.Text = "0 - Skin Tone\r\n1 - Upper Body\r\n2 - Lower Body\r\n3 - Hands\r\n4 - Feet";
+            // 
+            // iDListsToolStripMenuItem
+            // 
+            this.iDListsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.partnersToolStripMenuItem,
+            this.skillsToolStripMenuItem});
+            this.iDListsToolStripMenuItem.Name = "iDListsToolStripMenuItem";
+            this.iDListsToolStripMenuItem.Size = new System.Drawing.Size(68, 24);
+            this.iDListsToolStripMenuItem.Text = "ID Lists";
+            // 
+            // partnersToolStripMenuItem
+            // 
+            this.partnersToolStripMenuItem.Name = "partnersToolStripMenuItem";
+            this.partnersToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.partnersToolStripMenuItem.Text = "Partners";
+            this.partnersToolStripMenuItem.Click += new System.EventHandler(this.partnersToolStripMenuItem_Click);
+            // 
+            // skillsToolStripMenuItem
+            // 
+            this.skillsToolStripMenuItem.Name = "skillsToolStripMenuItem";
+            this.skillsToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.skillsToolStripMenuItem.Text = "Skills";
+            this.skillsToolStripMenuItem.Click += new System.EventHandler(this.skillsToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(588, 385);
+            this.ClientSize = new System.Drawing.Size(582, 383);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.tabControl1);
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximumSize = new System.Drawing.Size(600, 430);
+            this.MinimumSize = new System.Drawing.Size(600, 430);
             this.Name = "Form1";
             this.Text = "Partner Customization Tool";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -1483,6 +1523,10 @@
         private System.Windows.Forms.Button btnAddParam;
         private System.Windows.Forms.Button btnRemoveSkill;
         private System.Windows.Forms.Button btnAddSkill;
+        private System.Windows.Forms.ToolStripMenuItem iDListsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem partnersToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem skillsToolStripMenuItem;
+        private System.Windows.Forms.Label label14;
     }
 }
 
