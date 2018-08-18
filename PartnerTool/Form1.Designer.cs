@@ -38,6 +38,9 @@
             this.removePartnerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.unlockAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.iDListsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.partnersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.skillsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
@@ -74,6 +77,7 @@
             this.txtChar1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.label14 = new System.Windows.Forms.Label();
             this.cbPartColors = new System.Windows.Forms.ComboBox();
             this.txtPrtColor4 = new System.Windows.Forms.TextBox();
             this.label24 = new System.Windows.Forms.Label();
@@ -142,10 +146,6 @@
             this.label41 = new System.Windows.Forms.Label();
             this.txtSS1 = new System.Windows.Forms.TextBox();
             this.label42 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.iDListsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.partnersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.skillsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -237,6 +237,29 @@
             this.unlockAllToolStripMenuItem.Size = new System.Drawing.Size(188, 26);
             this.unlockAllToolStripMenuItem.Text = "Unlock All";
             // 
+            // iDListsToolStripMenuItem
+            // 
+            this.iDListsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.partnersToolStripMenuItem,
+            this.skillsToolStripMenuItem});
+            this.iDListsToolStripMenuItem.Name = "iDListsToolStripMenuItem";
+            this.iDListsToolStripMenuItem.Size = new System.Drawing.Size(68, 24);
+            this.iDListsToolStripMenuItem.Text = "ID Lists";
+            // 
+            // partnersToolStripMenuItem
+            // 
+            this.partnersToolStripMenuItem.Name = "partnersToolStripMenuItem";
+            this.partnersToolStripMenuItem.Size = new System.Drawing.Size(136, 26);
+            this.partnersToolStripMenuItem.Text = "Partners";
+            this.partnersToolStripMenuItem.Click += new System.EventHandler(this.partnersToolStripMenuItem_Click);
+            // 
+            // skillsToolStripMenuItem
+            // 
+            this.skillsToolStripMenuItem.Name = "skillsToolStripMenuItem";
+            this.skillsToolStripMenuItem.Size = new System.Drawing.Size(136, 26);
+            this.skillsToolStripMenuItem.Text = "Skills";
+            this.skillsToolStripMenuItem.Click += new System.EventHandler(this.skillsToolStripMenuItem_Click);
+            // 
             // statusStrip1
             // 
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
@@ -306,7 +329,7 @@
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(599, 302);
-            this.tabControl1.TabIndex = 4;
+            this.tabControl1.TabIndex = 0;
             // 
             // tabPage4
             // 
@@ -351,7 +374,7 @@
             this.txtChar13.Margin = new System.Windows.Forms.Padding(4);
             this.txtChar13.Name = "txtChar13";
             this.txtChar13.Size = new System.Drawing.Size(132, 22);
-            this.txtChar13.TabIndex = 25;
+            this.txtChar13.TabIndex = 13;
             this.txtChar13.TextChanged += new System.EventHandler(this.txtChar13_TextChanged);
             // 
             // label13
@@ -370,7 +393,7 @@
             this.txtChar8.Margin = new System.Windows.Forms.Padding(4);
             this.txtChar8.Name = "txtChar8";
             this.txtChar8.Size = new System.Drawing.Size(132, 22);
-            this.txtChar8.TabIndex = 23;
+            this.txtChar8.TabIndex = 8;
             this.txtChar8.TextChanged += new System.EventHandler(this.txtChar8_TextChanged);
             // 
             // label10
@@ -389,7 +412,7 @@
             this.txtChar11.Margin = new System.Windows.Forms.Padding(4);
             this.txtChar11.Name = "txtChar11";
             this.txtChar11.Size = new System.Drawing.Size(132, 22);
-            this.txtChar11.TabIndex = 21;
+            this.txtChar11.TabIndex = 11;
             this.txtChar11.TextChanged += new System.EventHandler(this.txtChar11_TextChanged);
             // 
             // label11
@@ -408,7 +431,7 @@
             this.txtChar12.Margin = new System.Windows.Forms.Padding(4);
             this.txtChar12.Name = "txtChar12";
             this.txtChar12.Size = new System.Drawing.Size(132, 22);
-            this.txtChar12.TabIndex = 19;
+            this.txtChar12.TabIndex = 12;
             this.txtChar12.TextChanged += new System.EventHandler(this.txtChar12_TextChanged);
             // 
             // label12
@@ -427,7 +450,7 @@
             this.txtChar7.Margin = new System.Windows.Forms.Padding(4);
             this.txtChar7.Name = "txtChar7";
             this.txtChar7.Size = new System.Drawing.Size(132, 22);
-            this.txtChar7.TabIndex = 17;
+            this.txtChar7.TabIndex = 7;
             this.txtChar7.TextChanged += new System.EventHandler(this.txtChar7_TextChanged);
             // 
             // label7
@@ -446,7 +469,7 @@
             this.txtChar10.Margin = new System.Windows.Forms.Padding(4);
             this.txtChar10.Name = "txtChar10";
             this.txtChar10.Size = new System.Drawing.Size(132, 22);
-            this.txtChar10.TabIndex = 15;
+            this.txtChar10.TabIndex = 10;
             this.txtChar10.TextChanged += new System.EventHandler(this.txtChar10_TextChanged);
             // 
             // label8
@@ -465,7 +488,7 @@
             this.txtChar9.Margin = new System.Windows.Forms.Padding(4);
             this.txtChar9.Name = "txtChar9";
             this.txtChar9.Size = new System.Drawing.Size(132, 22);
-            this.txtChar9.TabIndex = 13;
+            this.txtChar9.TabIndex = 9;
             this.txtChar9.TextChanged += new System.EventHandler(this.txtChar9_TextChanged);
             // 
             // label9
@@ -484,7 +507,7 @@
             this.txtChar4.Margin = new System.Windows.Forms.Padding(4);
             this.txtChar4.Name = "txtChar4";
             this.txtChar4.Size = new System.Drawing.Size(132, 22);
-            this.txtChar4.TabIndex = 11;
+            this.txtChar4.TabIndex = 4;
             this.txtChar4.TextChanged += new System.EventHandler(this.txtChar4_TextChanged);
             // 
             // label4
@@ -503,7 +526,7 @@
             this.txtChar6.Margin = new System.Windows.Forms.Padding(4);
             this.txtChar6.Name = "txtChar6";
             this.txtChar6.Size = new System.Drawing.Size(132, 22);
-            this.txtChar6.TabIndex = 9;
+            this.txtChar6.TabIndex = 6;
             this.txtChar6.TextChanged += new System.EventHandler(this.txtChar6_TextChanged);
             // 
             // label5
@@ -522,7 +545,7 @@
             this.txtChar5.Margin = new System.Windows.Forms.Padding(4);
             this.txtChar5.Name = "txtChar5";
             this.txtChar5.Size = new System.Drawing.Size(132, 22);
-            this.txtChar5.TabIndex = 7;
+            this.txtChar5.TabIndex = 5;
             this.txtChar5.TextChanged += new System.EventHandler(this.txtChar5_TextChanged);
             // 
             // label6
@@ -541,7 +564,7 @@
             this.txtChar3.Margin = new System.Windows.Forms.Padding(4);
             this.txtChar3.Name = "txtChar3";
             this.txtChar3.Size = new System.Drawing.Size(132, 22);
-            this.txtChar3.TabIndex = 5;
+            this.txtChar3.TabIndex = 3;
             this.txtChar3.TextChanged += new System.EventHandler(this.txtChar3_TextChanged);
             // 
             // label3
@@ -560,7 +583,7 @@
             this.txtChar2.Margin = new System.Windows.Forms.Padding(4);
             this.txtChar2.Name = "txtChar2";
             this.txtChar2.Size = new System.Drawing.Size(132, 22);
-            this.txtChar2.TabIndex = 3;
+            this.txtChar2.TabIndex = 2;
             this.txtChar2.TextChanged += new System.EventHandler(this.txtChar2_TextChanged);
             // 
             // label2
@@ -615,6 +638,15 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Part Colors";
             // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(19, 178);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(104, 85);
+            this.label14.TabIndex = 42;
+            this.label14.Text = "0 - Skin Tone\r\n1 - Upper Body\r\n2 - Lower Body\r\n3 - Hands\r\n4 - Feet";
+            // 
             // cbPartColors
             // 
             this.cbPartColors.FormattingEnabled = true;
@@ -622,7 +654,7 @@
             this.cbPartColors.Margin = new System.Windows.Forms.Padding(4);
             this.cbPartColors.Name = "cbPartColors";
             this.cbPartColors.Size = new System.Drawing.Size(160, 24);
-            this.cbPartColors.TabIndex = 41;
+            this.cbPartColors.TabIndex = 14;
             this.cbPartColors.SelectedIndexChanged += new System.EventHandler(this.cbPartColors_SelectedIndexChanged);
             // 
             // txtPrtColor4
@@ -631,7 +663,7 @@
             this.txtPrtColor4.Margin = new System.Windows.Forms.Padding(4);
             this.txtPrtColor4.Name = "txtPrtColor4";
             this.txtPrtColor4.Size = new System.Drawing.Size(132, 22);
-            this.txtPrtColor4.TabIndex = 35;
+            this.txtPrtColor4.TabIndex = 18;
             this.txtPrtColor4.TextChanged += new System.EventHandler(this.txtPrtColor4_TextChanged);
             // 
             // label24
@@ -650,7 +682,7 @@
             this.txtPrtColor5.Margin = new System.Windows.Forms.Padding(4);
             this.txtPrtColor5.Name = "txtPrtColor5";
             this.txtPrtColor5.Size = new System.Drawing.Size(132, 22);
-            this.txtPrtColor5.TabIndex = 31;
+            this.txtPrtColor5.TabIndex = 19;
             this.txtPrtColor5.TextChanged += new System.EventHandler(this.txtPrtColor5_TextChanged);
             // 
             // label26
@@ -669,7 +701,7 @@
             this.txtPrtColor3.Margin = new System.Windows.Forms.Padding(4);
             this.txtPrtColor3.Name = "txtPrtColor3";
             this.txtPrtColor3.Size = new System.Drawing.Size(132, 22);
-            this.txtPrtColor3.TabIndex = 29;
+            this.txtPrtColor3.TabIndex = 17;
             this.txtPrtColor3.TextChanged += new System.EventHandler(this.txtPrtColor3_TextChanged);
             // 
             // label27
@@ -688,7 +720,7 @@
             this.txtPrtColor2.Margin = new System.Windows.Forms.Padding(4);
             this.txtPrtColor2.Name = "txtPrtColor2";
             this.txtPrtColor2.Size = new System.Drawing.Size(132, 22);
-            this.txtPrtColor2.TabIndex = 27;
+            this.txtPrtColor2.TabIndex = 16;
             this.txtPrtColor2.TextChanged += new System.EventHandler(this.txtPrtColor2_TextChanged);
             // 
             // label28
@@ -707,7 +739,7 @@
             this.txtPrtColor1.Margin = new System.Windows.Forms.Padding(4);
             this.txtPrtColor1.Name = "txtPrtColor1";
             this.txtPrtColor1.Size = new System.Drawing.Size(132, 22);
-            this.txtPrtColor1.TabIndex = 25;
+            this.txtPrtColor1.TabIndex = 15;
             this.txtPrtColor1.TextChanged += new System.EventHandler(this.txtPrtColor1_TextChanged);
             // 
             // label29
@@ -749,7 +781,7 @@
             this.chkEnable.Margin = new System.Windows.Forms.Padding(4);
             this.chkEnable.Name = "chkEnable";
             this.chkEnable.Size = new System.Drawing.Size(297, 21);
-            this.chkEnable.TabIndex = 48;
+            this.chkEnable.TabIndex = 25;
             this.chkEnable.Text = "Enable Custom Costume for this Character";
             this.chkEnable.UseVisualStyleBackColor = true;
             this.chkEnable.CheckedChanged += new System.EventHandler(this.chkEnable_CheckedChanged);
@@ -760,7 +792,7 @@
             this.txtCostume4.Margin = new System.Windows.Forms.Padding(4);
             this.txtCostume4.Name = "txtCostume4";
             this.txtCostume4.Size = new System.Drawing.Size(132, 22);
-            this.txtCostume4.TabIndex = 47;
+            this.txtCostume4.TabIndex = 23;
             this.txtCostume4.TextChanged += new System.EventHandler(this.txtCostume4_TextChanged);
             // 
             // label22
@@ -779,7 +811,7 @@
             this.txtCostume5.Margin = new System.Windows.Forms.Padding(4);
             this.txtCostume5.Name = "txtCostume5";
             this.txtCostume5.Size = new System.Drawing.Size(132, 22);
-            this.txtCostume5.TabIndex = 45;
+            this.txtCostume5.TabIndex = 24;
             this.txtCostume5.TextChanged += new System.EventHandler(this.txtCostume5_TextChanged);
             // 
             // label23
@@ -798,7 +830,7 @@
             this.txtCostume3.Margin = new System.Windows.Forms.Padding(4);
             this.txtCostume3.Name = "txtCostume3";
             this.txtCostume3.Size = new System.Drawing.Size(132, 22);
-            this.txtCostume3.TabIndex = 43;
+            this.txtCostume3.TabIndex = 22;
             this.txtCostume3.TextChanged += new System.EventHandler(this.txtCostume3_TextChanged);
             // 
             // label25
@@ -817,7 +849,7 @@
             this.txtCostume2.Margin = new System.Windows.Forms.Padding(4);
             this.txtCostume2.Name = "txtCostume2";
             this.txtCostume2.Size = new System.Drawing.Size(132, 22);
-            this.txtCostume2.TabIndex = 41;
+            this.txtCostume2.TabIndex = 21;
             this.txtCostume2.TextChanged += new System.EventHandler(this.txtCostume2_TextChanged);
             // 
             // label30
@@ -836,7 +868,7 @@
             this.txtCostume1.Margin = new System.Windows.Forms.Padding(4);
             this.txtCostume1.Name = "txtCostume1";
             this.txtCostume1.Size = new System.Drawing.Size(132, 22);
-            this.txtCostume1.TabIndex = 39;
+            this.txtCostume1.TabIndex = 20;
             this.txtCostume1.TextChanged += new System.EventHandler(this.txtCostume1_TextChanged);
             // 
             // label31
@@ -881,7 +913,7 @@
             this.btnRemoveSkill.Margin = new System.Windows.Forms.Padding(4);
             this.btnRemoveSkill.Name = "btnRemoveSkill";
             this.btnRemoveSkill.Size = new System.Drawing.Size(168, 28);
-            this.btnRemoveSkill.TabIndex = 52;
+            this.btnRemoveSkill.TabIndex = 35;
             this.btnRemoveSkill.Text = "Remove Skill";
             this.btnRemoveSkill.UseVisualStyleBackColor = true;
             this.btnRemoveSkill.Click += new System.EventHandler(this.btnRemoveSkill_Click);
@@ -892,7 +924,7 @@
             this.btnAddSkill.Margin = new System.Windows.Forms.Padding(4);
             this.btnAddSkill.Name = "btnAddSkill";
             this.btnAddSkill.Size = new System.Drawing.Size(168, 28);
-            this.btnAddSkill.TabIndex = 51;
+            this.btnAddSkill.TabIndex = 34;
             this.btnAddSkill.Text = "Add Skill";
             this.btnAddSkill.UseVisualStyleBackColor = true;
             this.btnAddSkill.Click += new System.EventHandler(this.button6_Click);
@@ -904,7 +936,7 @@
             this.cbSkill.Margin = new System.Windows.Forms.Padding(4);
             this.cbSkill.Name = "cbSkill";
             this.cbSkill.Size = new System.Drawing.Size(160, 24);
-            this.cbSkill.TabIndex = 41;
+            this.cbSkill.TabIndex = 27;
             this.cbSkill.SelectedIndexChanged += new System.EventHandler(this.cbSkill_SelectedIndexChanged);
             // 
             // cbType
@@ -919,7 +951,7 @@
             this.cbType.Margin = new System.Windows.Forms.Padding(4);
             this.cbType.Name = "cbType";
             this.cbType.Size = new System.Drawing.Size(160, 24);
-            this.cbType.TabIndex = 40;
+            this.cbType.TabIndex = 26;
             this.cbType.SelectedIndexChanged += new System.EventHandler(this.cbType_SelectedIndexChanged);
             // 
             // txtSkill4
@@ -928,7 +960,7 @@
             this.txtSkill4.Margin = new System.Windows.Forms.Padding(4);
             this.txtSkill4.Name = "txtSkill4";
             this.txtSkill4.Size = new System.Drawing.Size(132, 22);
-            this.txtSkill4.TabIndex = 35;
+            this.txtSkill4.TabIndex = 31;
             this.txtSkill4.TextChanged += new System.EventHandler(this.txtSkill4_TextChanged);
             // 
             // label16
@@ -966,7 +998,7 @@
             this.txtSkill5.Margin = new System.Windows.Forms.Padding(4);
             this.txtSkill5.Name = "txtSkill5";
             this.txtSkill5.Size = new System.Drawing.Size(132, 22);
-            this.txtSkill5.TabIndex = 31;
+            this.txtSkill5.TabIndex = 32;
             this.txtSkill5.TextChanged += new System.EventHandler(this.txtSkill5_TextChanged);
             // 
             // label18
@@ -985,7 +1017,7 @@
             this.txtSkill3.Margin = new System.Windows.Forms.Padding(4);
             this.txtSkill3.Name = "txtSkill3";
             this.txtSkill3.Size = new System.Drawing.Size(132, 22);
-            this.txtSkill3.TabIndex = 29;
+            this.txtSkill3.TabIndex = 30;
             this.txtSkill3.TextChanged += new System.EventHandler(this.txtSkill3_TextChanged);
             // 
             // label19
@@ -1004,7 +1036,7 @@
             this.txtSkill2.Margin = new System.Windows.Forms.Padding(4);
             this.txtSkill2.Name = "txtSkill2";
             this.txtSkill2.Size = new System.Drawing.Size(132, 22);
-            this.txtSkill2.TabIndex = 27;
+            this.txtSkill2.TabIndex = 29;
             this.txtSkill2.TextChanged += new System.EventHandler(this.txtSkill2_TextChanged);
             // 
             // label20
@@ -1023,7 +1055,7 @@
             this.txtSkill1.Margin = new System.Windows.Forms.Padding(4);
             this.txtSkill1.Name = "txtSkill1";
             this.txtSkill1.Size = new System.Drawing.Size(132, 22);
-            this.txtSkill1.TabIndex = 25;
+            this.txtSkill1.TabIndex = 28;
             this.txtSkill1.TextChanged += new System.EventHandler(this.txtSkill1_TextChanged);
             // 
             // label21
@@ -1065,7 +1097,7 @@
             this.btnRemoveParam.Margin = new System.Windows.Forms.Padding(4);
             this.btnRemoveParam.Name = "btnRemoveParam";
             this.btnRemoveParam.Size = new System.Drawing.Size(168, 28);
-            this.btnRemoveParam.TabIndex = 50;
+            this.btnRemoveParam.TabIndex = 43;
             this.btnRemoveParam.Text = "Remove Parameter";
             this.btnRemoveParam.UseVisualStyleBackColor = true;
             this.btnRemoveParam.Click += new System.EventHandler(this.btnRemoveParam_Click);
@@ -1076,7 +1108,7 @@
             this.btnAddParam.Margin = new System.Windows.Forms.Padding(4);
             this.btnAddParam.Name = "btnAddParam";
             this.btnAddParam.Size = new System.Drawing.Size(168, 28);
-            this.btnAddParam.TabIndex = 49;
+            this.btnAddParam.TabIndex = 42;
             this.btnAddParam.Text = "Add Parameter";
             this.btnAddParam.UseVisualStyleBackColor = true;
             this.btnAddParam.Click += new System.EventHandler(this.btnAddParam_Click);
@@ -1088,7 +1120,7 @@
             this.cbParam.Margin = new System.Windows.Forms.Padding(4);
             this.cbParam.Name = "cbParam";
             this.cbParam.Size = new System.Drawing.Size(160, 24);
-            this.cbParam.TabIndex = 48;
+            this.cbParam.TabIndex = 36;
             this.cbParam.SelectedIndexChanged += new System.EventHandler(this.cbParam_SelectedIndexChanged);
             // 
             // txtParam4
@@ -1097,7 +1129,7 @@
             this.txtParam4.Margin = new System.Windows.Forms.Padding(4);
             this.txtParam4.Name = "txtParam4";
             this.txtParam4.Size = new System.Drawing.Size(132, 22);
-            this.txtParam4.TabIndex = 47;
+            this.txtParam4.TabIndex = 40;
             this.txtParam4.TextChanged += new System.EventHandler(this.txtParam4_TextChanged);
             // 
             // label32
@@ -1116,7 +1148,7 @@
             this.txtParam5.Margin = new System.Windows.Forms.Padding(4);
             this.txtParam5.Name = "txtParam5";
             this.txtParam5.Size = new System.Drawing.Size(132, 22);
-            this.txtParam5.TabIndex = 45;
+            this.txtParam5.TabIndex = 41;
             this.txtParam5.TextChanged += new System.EventHandler(this.txtParam5_TextChanged);
             // 
             // label33
@@ -1135,7 +1167,7 @@
             this.txtParam3.Margin = new System.Windows.Forms.Padding(4);
             this.txtParam3.Name = "txtParam3";
             this.txtParam3.Size = new System.Drawing.Size(132, 22);
-            this.txtParam3.TabIndex = 43;
+            this.txtParam3.TabIndex = 39;
             this.txtParam3.TextChanged += new System.EventHandler(this.txtParam3_TextChanged);
             // 
             // label34
@@ -1154,7 +1186,7 @@
             this.txtParam2.Margin = new System.Windows.Forms.Padding(4);
             this.txtParam2.Name = "txtParam2";
             this.txtParam2.Size = new System.Drawing.Size(132, 22);
-            this.txtParam2.TabIndex = 41;
+            this.txtParam2.TabIndex = 38;
             this.txtParam2.TextChanged += new System.EventHandler(this.txtParam2_TextChanged);
             // 
             // label35
@@ -1173,7 +1205,7 @@
             this.txtParam1.Margin = new System.Windows.Forms.Padding(4);
             this.txtParam1.Name = "txtParam1";
             this.txtParam1.Size = new System.Drawing.Size(132, 22);
-            this.txtParam1.TabIndex = 39;
+            this.txtParam1.TabIndex = 37;
             this.txtParam1.TextChanged += new System.EventHandler(this.txtParam1_TextChanged);
             // 
             // label36
@@ -1216,7 +1248,7 @@
             this.btnRemoveSS.Margin = new System.Windows.Forms.Padding(4);
             this.btnRemoveSS.Name = "btnRemoveSS";
             this.btnRemoveSS.Size = new System.Drawing.Size(168, 28);
-            this.btnRemoveSS.TabIndex = 43;
+            this.btnRemoveSS.TabIndex = 51;
             this.btnRemoveSS.Text = "Remove Super Soul";
             this.btnRemoveSS.UseVisualStyleBackColor = true;
             this.btnRemoveSS.Click += new System.EventHandler(this.btnRemoveSS_Click);
@@ -1227,7 +1259,7 @@
             this.btnAddSS.Margin = new System.Windows.Forms.Padding(4);
             this.btnAddSS.Name = "btnAddSS";
             this.btnAddSS.Size = new System.Drawing.Size(168, 28);
-            this.btnAddSS.TabIndex = 42;
+            this.btnAddSS.TabIndex = 50;
             this.btnAddSS.Text = "Add Super Soul";
             this.btnAddSS.UseVisualStyleBackColor = true;
             this.btnAddSS.Click += new System.EventHandler(this.btnAddSS_Click);
@@ -1239,7 +1271,7 @@
             this.cbSuperSoul.Margin = new System.Windows.Forms.Padding(4);
             this.cbSuperSoul.Name = "cbSuperSoul";
             this.cbSuperSoul.Size = new System.Drawing.Size(160, 24);
-            this.cbSuperSoul.TabIndex = 41;
+            this.cbSuperSoul.TabIndex = 44;
             this.cbSuperSoul.SelectedIndexChanged += new System.EventHandler(this.cbSuperSoul_SelectedIndexChanged);
             // 
             // txtSS4
@@ -1248,7 +1280,7 @@
             this.txtSS4.Margin = new System.Windows.Forms.Padding(4);
             this.txtSS4.Name = "txtSS4";
             this.txtSS4.Size = new System.Drawing.Size(132, 22);
-            this.txtSS4.TabIndex = 37;
+            this.txtSS4.TabIndex = 48;
             this.txtSS4.TextChanged += new System.EventHandler(this.txtSS4_TextChanged);
             // 
             // label37
@@ -1267,7 +1299,7 @@
             this.txtSS5.Margin = new System.Windows.Forms.Padding(4);
             this.txtSS5.Name = "txtSS5";
             this.txtSS5.Size = new System.Drawing.Size(132, 22);
-            this.txtSS5.TabIndex = 33;
+            this.txtSS5.TabIndex = 49;
             this.txtSS5.TextChanged += new System.EventHandler(this.txtSS5_TextChanged);
             // 
             // label39
@@ -1286,7 +1318,7 @@
             this.txtSS3.Margin = new System.Windows.Forms.Padding(4);
             this.txtSS3.Name = "txtSS3";
             this.txtSS3.Size = new System.Drawing.Size(132, 22);
-            this.txtSS3.TabIndex = 31;
+            this.txtSS3.TabIndex = 47;
             this.txtSS3.TextChanged += new System.EventHandler(this.txtSS3_TextChanged);
             // 
             // label40
@@ -1305,7 +1337,7 @@
             this.txtSS2.Margin = new System.Windows.Forms.Padding(4);
             this.txtSS2.Name = "txtSS2";
             this.txtSS2.Size = new System.Drawing.Size(132, 22);
-            this.txtSS2.TabIndex = 29;
+            this.txtSS2.TabIndex = 46;
             this.txtSS2.TextChanged += new System.EventHandler(this.txtSS2_TextChanged);
             // 
             // label41
@@ -1324,7 +1356,7 @@
             this.txtSS1.Margin = new System.Windows.Forms.Padding(4);
             this.txtSS1.Name = "txtSS1";
             this.txtSS1.Size = new System.Drawing.Size(132, 22);
-            this.txtSS1.TabIndex = 27;
+            this.txtSS1.TabIndex = 45;
             this.txtSS1.TextChanged += new System.EventHandler(this.txtSS1_TextChanged);
             // 
             // label42
@@ -1336,38 +1368,6 @@
             this.label42.Size = new System.Drawing.Size(72, 17);
             this.label42.TabIndex = 26;
             this.label42.Text = "Partner ID";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(467, 169);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(104, 85);
-            this.label14.TabIndex = 42;
-            this.label14.Text = "0 - Skin Tone\r\n1 - Upper Body\r\n2 - Lower Body\r\n3 - Hands\r\n4 - Feet";
-            // 
-            // iDListsToolStripMenuItem
-            // 
-            this.iDListsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.partnersToolStripMenuItem,
-            this.skillsToolStripMenuItem});
-            this.iDListsToolStripMenuItem.Name = "iDListsToolStripMenuItem";
-            this.iDListsToolStripMenuItem.Size = new System.Drawing.Size(68, 24);
-            this.iDListsToolStripMenuItem.Text = "ID Lists";
-            // 
-            // partnersToolStripMenuItem
-            // 
-            this.partnersToolStripMenuItem.Name = "partnersToolStripMenuItem";
-            this.partnersToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
-            this.partnersToolStripMenuItem.Text = "Partners";
-            this.partnersToolStripMenuItem.Click += new System.EventHandler(this.partnersToolStripMenuItem_Click);
-            // 
-            // skillsToolStripMenuItem
-            // 
-            this.skillsToolStripMenuItem.Name = "skillsToolStripMenuItem";
-            this.skillsToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
-            this.skillsToolStripMenuItem.Text = "Skills";
-            this.skillsToolStripMenuItem.Click += new System.EventHandler(this.skillsToolStripMenuItem_Click);
             // 
             // Form1
             // 
