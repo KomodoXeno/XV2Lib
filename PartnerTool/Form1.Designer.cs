@@ -613,7 +613,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(98, 17);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Default Parset";
+            this.label1.Text = "Default Partset";
             // 
             // tabPage2
             // 
@@ -822,7 +822,7 @@
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(108, 17);
             this.label23.TabIndex = 44;
-            this.label23.Text = "Costume Parset";
+            this.label23.Text = "Costume Partset";
             // 
             // txtCostume3
             // 
